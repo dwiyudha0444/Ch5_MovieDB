@@ -28,10 +28,10 @@ class DetailFragment : Fragment() {
         Glide.with(view)
             .load("https://image.tmdb.org/t/p/w500${getfilm.posterPath}")
             .into(binding.ivFilmimagedetail)
-        binding.tvNamafilmdetail.text = getfilm.title
-        binding.tvReleasefilmdetail.text = "Release : ${getfilm.releaseDate}"
+        binding.tvJdl.text = getfilm.title
+        binding.tvRelease.text = "Release : ${getfilm.releaseDate}"
         binding.tvKP.text = "Popularity : ${getfilm.popularity}"
-        binding.tvSinopsisfilmdetail.text = """Overview:
+        binding.tvSin.text = """Overview:
             ${getfilm.overview}
         """.trimIndent()
 

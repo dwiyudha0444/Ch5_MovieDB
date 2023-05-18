@@ -50,7 +50,7 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/tvNamafilmdetail"
+                                    android:id="@+id/tvJdl"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ellipsize="marquee"
@@ -150,11 +150,11 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tvReleasefilmdetail"
+                            android:id="@+id/tvRelease"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/tvRD"
-                            android:text="Alumni"
+                            android:text="Al"
                             android:textSize="12sp" />
 
                     </RelativeLayout>
@@ -188,7 +188,7 @@
                         android:layout_marginTop="20dp">
 
                         <TextView
-                            android:id="@+id/tv_sinopsisfilmdetail"
+                            android:id="@+id/tvSin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="STORYLINE :"
