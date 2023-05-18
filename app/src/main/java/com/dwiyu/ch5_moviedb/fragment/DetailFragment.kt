@@ -30,14 +30,11 @@ class DetailFragment : Fragment() {
             .into(binding.ivFilmimagedetail)
         binding.tvNamafilmdetail.text = getfilm.title
         binding.tvReleasefilmdetail.text = "Release : ${getfilm.releaseDate}"
-        binding.tvPopularitydetail.text = "Popularity : ${getfilm.popularity}"
+        binding.tvKP.text = "Popularity : ${getfilm.popularity}"
         binding.tvSinopsisfilmdetail.text = """Overview:
             ${getfilm.overview}
         """.trimIndent()
 
-        //test crashlytics
-        binding.btnCrashdetail.setOnClickListener {
-            throw RuntimeException("Test Crash") // Force a crash
-        }
+
     }
 }
