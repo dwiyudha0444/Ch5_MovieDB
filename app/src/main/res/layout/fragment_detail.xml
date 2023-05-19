@@ -165,7 +165,7 @@
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:id="@+id/tvKP"
+                            android:id="@+id/tvPopularity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kepopuleran :"
@@ -174,10 +174,10 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tvPopularity"
+                            android:id="@+id/tvKP"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/tvKP"
+                            android:layout_below="@+id/tvPopularity"
                             android:textSize="12sp" />
 
                     </RelativeLayout>
@@ -188,7 +188,7 @@
                         android:layout_marginTop="20dp">
 
                         <TextView
-                            android:id="@+id/tvSin"
+                            android:id="@+id/tvOverview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="STORYLINE :"
@@ -197,10 +197,10 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tvOverview"
+                            android:id="@+id/tvSin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/tv_sinopsisfilmdetail"
+                            android:layout_below="@+id/tvOverview"
                             android:layout_marginTop="5dp"
                             android:textColor="@android:color/white"
                             android:textSize="14sp" />
@@ -234,8 +234,10 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabShare"
+        android:id="@+id/fabLove"
+
         android:layout_width="wrap_content"
+        android:src="@drawable/ic_love"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"

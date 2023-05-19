@@ -18,12 +18,10 @@ class ProfileFragment : Fragment() {
     lateinit var sharedPreferences: SharedPreferences
     lateinit var firebaseAuth: FirebaseAuth
 
-    //lateinit var firebaseAuth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
 

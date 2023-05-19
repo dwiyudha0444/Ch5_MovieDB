@@ -11,7 +11,6 @@ import retrofit2.Response
 
 class ViewModelFilm : ViewModel() {
     var liveDataMovie: MutableLiveData<List<NowPlayingMovieResponse>?> = MutableLiveData()
-
     fun callApi() {
         ApiClient.instance.getMovie().enqueue(object : Callback<NowplayingMovie> {
             override fun onResponse(

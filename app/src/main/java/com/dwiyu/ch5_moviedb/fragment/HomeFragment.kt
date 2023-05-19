@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
         var getUser = sharedPreferences.getString("user", "")
         binding.textView.text = "Welcome, $getUser"
 
-        binding.ivIcprofile.setOnClickListener {
+        binding.ivProfile.setOnClickListener {
             var addUser = sharedPreferences.edit()
             addUser.putString("user", getUser)
             addUser.apply()

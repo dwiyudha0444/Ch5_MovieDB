@@ -14,7 +14,6 @@ import com.google.firebase.auth.FirebaseAuth
 class LoginFragment : Fragment() {
 
     lateinit var binding: FragmentLoginBinding
-    //lateinit var sharedLogin: SharedPreferences
     lateinit var firebaseAuth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
